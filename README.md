@@ -1,14 +1,8 @@
-![header](./header.png)
-
-
 # DeepCGH: 3D computer generated holography using deep learning
 DeepCGH is an *unsupervised*, *non-iterative* algorithm for computer generated holography. DeepCGH relies on convolutional neural networks to perform *image plane* holography in real-time.
-For more details regarding the structure and algorithm refer to the [associated manuscript](https://www.osapublishing.org/oe/abstract.cfm?uri=oe-28-18-26636) [1]. Please also see our copyright and permission notice in `copyright.pdf`.
-
-For a hands on tutorial you can also see the [`DeepCGH_tutorial.ipynb`](https://colab.research.google.com/drive/1s9zPDb6TArwB4FSUBiUBIuVr9SdtrXnM?usp=sharing) available both on google colab and as a Jupyter Notebook (`tutorial.ipynb`).
 
 ## Installation Guide and Dependencies:
-Here we provide a Python and Tensorflow implementation of DeepCGH. The current version of this software does not require explciit installation. Dependencies include:
+Python and Tensorflow implementation of DeepCGH. The current version of this software does not require explciit installation. Dependencies include:
 ```
 python 3.x
 tensorflow-gpu >= 2.0.0
@@ -25,8 +19,7 @@ This software was not tested on **Mac OS** but theoretically it should run smoot
 After the installation of packages is complete, you can clone this repository to your machine using:
 ```git clone https://github.com/UNC-optics/DeepCGH.git```
 
-## Usage
-### For Users
+#Usage
 After cloning the repository (see previous section), you can run the demo `demo_infinity_loop.py` for a simple inifinity loop example. In this demo:
 
 First, the parameters of the simulated training dataset are determined:
@@ -124,11 +117,6 @@ The CGH solution is achieved by calling the `get_hologram` method:
 ```
 dcgh.get_hologram(data)
 ```
-
-### For Developers
-Coming soon (how to change the model structure, how to change the loss function, etc).
-
-
 ### Citation
 [1] M. Hossein Eybposh, Nicholas W. Caira, Mathew Atisa, Praneeth Chakravarthula, and Nicolas C. Pégard, "DeepCGH: 3D computer-generated holography using deep learning," Opt. Express 28, 26636-26650 (2020)
 
